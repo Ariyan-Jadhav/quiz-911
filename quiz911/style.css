@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@font-face {
+  font-family: graniteFree;
+  src: url(GraniteFreeRegular-pg67v.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#info {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
