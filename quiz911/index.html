@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-911</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #li-opt li {
+        background-color: rgb(255, 233, 154);
+        margin: 10px;
+        padding: 6px 5px;
+        border-radius: 6px;
+        text-align: center;
+        width: auto;
+        font-size: 14px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        cursor: pointer;
+      }
+
+      #li-opt li:hover {
+        background-color: rgb(255, 233, 154, 0.7);
+      }
+
+      #li-butt button {
+        background-color: rgb(255, 170, 170);
+        padding: 5px 25px;
+        margin-left: 19px;
+        margin-right: 19px;
+        border-radius: 18px;
+      }
+      #li-butt button:hover {
+        background-color: rgba(224, 108, 108, 0.7);
+      }
+      ._hidden {
+        display: none;
+      }
+      .color-change {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body style="background-color: #819a91">
+    <div
+      class="min-h-screen"
+      id="slide-1"
+      style="background-color: #a7c1a8"
+    ></div>
+    <div
+      class="w-[65%] flex page rounded-lg h-[60vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden bg-[rgb(209,216,190)]"
+      id="slide-2"
+    >
+      <img class="absolute h-24 plane" src="plane.png" style="top: 50%" />
+      <!--WorkSpace -->
+      <div
+        class="w-[50%] h-full flex flex-col justify-evenly items-center bg-[rgb(0,0,0,0.05)]"
+      >
+        <div
+          class="w-[90%] h-[54px] bg-[rgba(0,0,0,0.2)] flex justify-center items-center rounded-lg _hidden"
+          id="p-qus"
+        >
+          <p
+            class="text-center font-bold text-[15px]"
+            id="select-question"
+            style="font-family: Georgia, 'Times New Roman', Times, serif"
+          >
+            Here is the question
+          </p>
+        </div>
+        <div id="li-opt" class="w-[40%] _hidden">
+          <ul id="select-option">
+            <li id="option1" data-id="option1">option</li>
+            <li id="option2" data-id="option2">option</li>
+            <li id="option3" data-id="option3">option</li>
+            <li id="option4" data-id="option4">option</li>
+          </ul>
+        </div>
+        <div
+          id="li-butt"
+          class="flex justify-center flex-col items-center gap-2"
+        >
+          <button
+            id="str-butt"
+            class="font-bold"
+            style="
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            "
+          >
+            Start
+          </button>
+          <p class="max-w-[80%] text-center" id="info">
+            On 9/11, in 2001, terrorists hijacked planes and crashed them into
+            the Twin Towers in New York. It was a serious tragedy. After that,
+            airport security got super strict — even water bottles became
+            “dangerous.” People started making wild conspiracy theories, and the
+            world was never the same again. Serious event, but some folks still
+            find weird ways to joke about it
+          </p>
+        </div>
+      </div>
+      <!--WorkSpace -->
+      <div class="w-[50%] h-full flex items-end justify-center">
+        <img src="QUIZ.png" class="bg-cover h-[340px]" />
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
